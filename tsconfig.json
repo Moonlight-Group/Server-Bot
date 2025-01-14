@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "incremental": true,
+        "module": "CommonJS",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "target": "ES2020",
+        "strict": true,
+        "tsBuildInfoFile": "./__cache__/.tsbuildinfo",
+        "paths": {
+            "index": ["./src/index.ts", "./dist/index.js"],
+            "@functions/*": ["./src/functions/*"],
+            "@managers/*": ["./src/classes/managers/*"],
+            "@structures/*": ["./src/classes/structures/*"]
+        },
+        "strictNullChecks": false
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./dist",
+        "./__test__"
+    ]
+}
